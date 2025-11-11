@@ -1,0 +1,52 @@
+{
+  "teams": [
+    {
+      "id": "1",
+      "name": "Team A"
+    },
+    {
+      "id": "2",
+      "name": "Team B"
+    },
+    {
+      "id": "3309",
+      "name": "KKS Lech Poznań"
+    },
+    {
+      "id": "6b70",
+      "name": "Olimpia Grudziądz"
+    }
+  ],
+  "players": [
+    {
+      "id": "1",
+      "teamId": 1,
+      "name": "Alice",
+      "position": "Forward"
+    },
+    {
+      "id": "2",
+      "teamId": 1,
+      "name": "Bob",
+      "position": "Goalkeeper"
+    },
+    {
+      "id": "3",
+      "teamId": 2,
+      "name": "Charlie",
+      "position": "Defender"
+    },
+    {
+      "id": "9331",
+      "name": "Mikael Ishak",
+      "position": "Forward",
+      "teamId": 3309
+    },
+    {
+      "id": "58a3",
+      "name": "Louis Palma",
+      "position": "Winger",
+      "teamId": 3309
+    }
+  ]
+}
