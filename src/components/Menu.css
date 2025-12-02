@@ -6,4 +6,9 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
+    max-height: 8rem;
+    overflow: clip;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

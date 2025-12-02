@@ -48,7 +48,7 @@ function TeamList() {
         players.filter(p => p.teamId === teamId).length;
 
     return (
-        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', width: '100vw' }
+        <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }
         }>
             <Menu teamName="Teams" />
 
@@ -69,7 +69,7 @@ function TeamList() {
                             gap: '20px',
                             width: '95%',
                             margin: '0 auto',
-                            justifyItems: 'center',
+                            // justifyItems: 'center',
                         }}
                     >
                         {teams.map(team => (

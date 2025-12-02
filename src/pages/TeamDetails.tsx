@@ -4,6 +4,7 @@ import axios from 'axios';
 import Menu from '../components/Menu';
 import Body from '../components/Body';
 import Footer from '../components/Footer';
+import PageContainer from '../components/PageContainer';
 
 interface Player {
     id: number;
@@ -13,7 +14,7 @@ interface Player {
 }
 
 interface Team {
-    id: number;
+    id: string;
     name: string;
 }
 
@@ -43,33 +44,19 @@ function TeamDetails() {
     }, [id]);
 
     if (loading) return <p>Loading team data...</p>;
-    if (!team) return <p>Team not found.</p>;
+    if (!team || !id) return <p>Team not found.</p>;
 
     return (
-        <div>
+        <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }
+        }>
             <Menu teamName={team.name} />
-            <div style={{ marginTop: '80px', marginBottom: '60px', textAlign: 'center' }}>
-                <Link to="/" style={{ textDecoration: 'none', color: '#007bff' }}>← Back to Teams</Link>
-                <Body players={players} />
 
-                {/* 👇 Add Player Button */}
-                <Link
-                    to={`/team/${id}/new-player`}
-                    style={{
-                        display: 'inline-block',
-                        marginTop: '1rem',
-                        backgroundColor: '#28a745',
-                        color: 'white',
-                        padding: '0.5rem 1rem',
-                        borderRadius: '5px',
-                        textDecoration: 'none'
-                    }}
-                >
-                    + Add New Player
-                </Link>
-            </div>
-            <Footer />
-        </div>
+            <PageContainer>
+                <Body players={players} teamId={id} />
+                <Link to="/" style={{ textDecoration: 'none', color: '#007bff' }}>← Back to Teams</Link>
+                <Footer />
+            </PageContainer>
+        </div >
     );
 }
 

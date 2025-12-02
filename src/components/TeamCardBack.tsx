@@ -17,10 +17,14 @@ export default function TeamCardBack({ id, name, playerCount }: TeamCardBackProp
         >
             <div
                 style={{
-                    width: '150px',
-                    height: '80px',
-                    padding: '20px',
+                    width: '200px',
+                    // padding: '8px',
                     textAlign: 'center',
+
+                    overflow: "hidden",
+                    textOverflow: "clip",
+                    whiteSpace: "nowrap",
+                    display: 'inline-block',
                 }}
             >
                 <h3 style={{ margin: 0 }}>{name}</h3>

@@ -41,6 +41,12 @@ export default function TeamCard({ name, primaryColor, secondaryColor }: TeamCar
                     background: "#ffffff",
                     fontWeight: "bold",
                     fontSize: "1.2rem",
+
+                    /* NEW */
+                    width: '220px',
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
                 }}
             >
                 {name}

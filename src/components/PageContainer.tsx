@@ -6,11 +6,15 @@ function PageContainer({ children }: Props) {
     return (
         <div
             style={{
-                marginTop: '80px',
+                marginTop: '1rem',
                 marginBottom: '60px',
-                display: 'flex',
-                flexDirection: 'column',
-                paddingTop: '5rem',
+                paddingTop: '9rem',
+                width: '100%',
+                maxWidth: '100vw',
+                justifyContent: 'center',
+                textAlign: 'center',
+                paddingBottom: '2rem',
+                zIndex: 5
             }}
         >
             {children}

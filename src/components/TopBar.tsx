@@ -16,8 +16,8 @@ function TopBar({ title, buttonText, buttonLink }: Props) {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 margin: '0 auto',
-                marginBottom: '1rem',
                 marginTop: '1rem',
+                marginBottom: '1rem',
             }}
         >
             <h2 style={{ margin: 0 }}>{title}</h2>
