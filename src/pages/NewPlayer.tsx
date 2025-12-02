@@ -21,7 +21,7 @@ function NewPlayer() {
             await axios.post('http://localhost:3000/players', {
                 name,
                 position,
-                teamId: Number(id)
+                teamId: String(id)
             });
             navigate(`/team/${id}`);
         } catch (err) {
