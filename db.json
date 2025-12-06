@@ -1,30 +1,6 @@
 {
   "teams": [
     {
-      "id": "1",
-      "name": "Team A",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
-    },
-    {
-      "id": "3309",
-      "name": "KKS Lech Poznań",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
-    },
-    {
-      "id": "6b70",
-      "name": "Olimpia Grudziądz",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
-    },
-    {
-      "id": "c6f1",
-      "name": "test",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
-    },
-    {
       "id": "4fa2",
       "name": "Huragan Pobiedziska",
       "primaryColor": "#000000",
@@ -35,38 +11,38 @@
       "name": "Warta Poznań",
       "primaryColor": "#ffffff",
       "secondaryColor": "#00e138"
+    },
+    {
+      "id": "9621",
+      "name": "KKS Lech Poznań",
+      "primaryColor": "#208fff",
+      "secondaryColor": "#ffffff"
+    },
+    {
+      "id": "a5a5",
+      "name": "FC Barcelona",
+      "primaryColor": "#0000a6",
+      "secondaryColor": "#950000"
     }
   ],
   "players": [
     {
-      "id": "1",
-      "teamId": "1",
-      "name": "Alice",
-      "position": "Forward"
+      "id": "d7b0",
+      "name": "Krzysztof Dziarski",
+      "position": "Striker",
+      "teamId": "4fa2"
     },
     {
-      "id": "2",
-      "teamId": "1",
-      "name": "Bob",
-      "position": "Goalkeeper"
+      "id": "4896",
+      "name": "Bartosz Nagadowski",
+      "position": "Goalkeeper",
+      "teamId": "4fa2"
     },
     {
-      "id": "9331",
-      "name": "Mikael Ishak",
-      "position": "Forward",
-      "teamId": "3309"
-    },
-    {
-      "id": "58a3",
-      "name": "Louis Palma",
-      "position": "Winger",
-      "teamId": "3309"
-    },
-    {
-      "id": "9bef",
-      "name": "Konstantynopolitańczykiewiczówianeczka",
-      "position": "Chuh",
-      "teamId": "6b70"
+      "id": "3458",
+      "name": "Bogusław Rosołowski",
+      "position": "Coach",
+      "teamId": "4fa2"
     }
   ]
 }

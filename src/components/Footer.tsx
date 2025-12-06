@@ -3,7 +3,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className="footer">
-            <p>© 2025 Team Manager App</p>
+            <p>Web frameworks and Tools 2025</p>
         </footer>
     );
 }

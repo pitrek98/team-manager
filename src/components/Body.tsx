@@ -39,7 +39,7 @@ function Body({ players: initialPlayers, teamId }: BodyProps) {
                 style={{
                     display: 'grid',
                     gridAutoFlow: 'row',
-                    gridTemplateColumns: 'repeat(auto-fit, 150px)',
+                    gridTemplateColumns: 'repeat(auto-fit, 200px)',
                     gap: '30px',
                     justifyContent: 'center',
                     width: '95%',
@@ -59,7 +59,7 @@ function Body({ players: initialPlayers, teamId }: BodyProps) {
                         padding: '0.5rem',
                         margin: '0.5rem',
                         alignContent: 'center',
-                        width: '120px',
+                        width: '170px',
                     }}
                 >
                     + Add New Player

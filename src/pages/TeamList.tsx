@@ -50,7 +50,7 @@ function TeamList() {
     return (
         <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }
         }>
-            <Menu teamName="Teams" />
+            <Menu teamName="Team manager" />
 
             <PageContainer>
                 <TopBar
@@ -69,7 +69,7 @@ function TeamList() {
                             gap: '20px',
                             width: '95%',
                             margin: '0 auto',
-                            // justifyItems: 'center',
+                            justifyItems: 'center',
                         }}
                     >
                         {teams.map(team => (
