@@ -4,8 +4,34 @@
     padding: 0.5rem;
     margin: 0.5rem;
     text-align: center;
-    width: 150px;
+    width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.player-name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.player-position {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.player-delete-btn {
+    background: transparent;
+    border: none;
+    color: #c00;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.player-delete-btn:hover {
+    color: red;
+    transform: scale(1.15);
 }

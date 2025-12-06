@@ -7,12 +7,6 @@
       "secondaryColor": "#A50044"
     },
     {
-      "id": "2",
-      "name": "Team B",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
-    },
-    {
       "id": "3309",
       "name": "KKS Lech Poznań",
       "primaryColor": "#0046A8",
@@ -25,36 +19,22 @@
       "secondaryColor": "#A50044"
     },
     {
-      "id": "3a74",
-      "name": "ŁKS Łódź",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
-    },
-    {
-      "id": "495f",
-      "name": "Team1",
-      "primaryColor": "#999999",
-      "secondaryColor": "#A50044"
-    },
-    {
       "id": "c6f1",
       "name": "test",
       "primaryColor": "#0046A8",
       "secondaryColor": "#A50044"
     },
     {
-      "id": "c2d3",
-      "name": "4",
-      "primaryColor": "#0046A8",
-      "secondaryColor": "#A50044"
+      "id": "4fa2",
+      "name": "Huragan Pobiedziska",
+      "primaryColor": "#000000",
+      "secondaryColor": "#c60000"
     },
     {
-      "id": "6d60",
-      "name": "yibsnfoqsnagiupnaspfiugnaspoidgn ajsdgnpoasdngapdugnapsidgnipuasdbgpugbpiua gausni aug sg"
-    },
-    {
-      "id": "2296",
-      "name": "abcdefghijklmnopqr"
+      "id": "0136",
+      "name": "Warta Poznań",
+      "primaryColor": "#ffffff",
+      "secondaryColor": "#00e138"
     }
   ],
   "players": [
@@ -71,12 +51,6 @@
       "position": "Goalkeeper"
     },
     {
-      "id": "3",
-      "teamId": "2",
-      "name": "Charlie",
-      "position": "Defender"
-    },
-    {
       "id": "9331",
       "name": "Mikael Ishak",
       "position": "Forward",
@@ -89,87 +63,9 @@
       "teamId": "3309"
     },
     {
-      "id": "461f",
-      "name": "af",
-      "position": "asf",
-      "teamId": "2"
-    },
-    {
-      "id": "07a5",
-      "name": "af",
-      "position": "asf",
-      "teamId": "2"
-    },
-    {
-      "id": "d3c8",
-      "name": "ags",
-      "position": "sad",
-      "teamId": "2"
-    },
-    {
-      "id": "b1b8",
-      "name": "gasd",
-      "position": "dsga",
-      "teamId": "2"
-    },
-    {
-      "id": "ead7",
-      "name": "gas",
-      "position": "gd",
-      "teamId": "2"
-    },
-    {
-      "id": "7751",
-      "name": "hgfs",
-      "position": "sdf",
-      "teamId": "2"
-    },
-    {
-      "id": "f3d0",
-      "name": "hgsd",
-      "position": "dfg",
-      "teamId": "2"
-    },
-    {
-      "id": "0b37",
-      "name": "hgf",
-      "position": "dfgd",
-      "teamId": "2"
-    },
-    {
-      "id": "7397",
-      "name": "hgf",
-      "position": "hsdf",
-      "teamId": "2"
-    },
-    {
-      "id": "0073",
-      "name": "hsgh",
-      "position": "dsgjsgdj",
-      "teamId": "2"
-    },
-    {
-      "id": "0a47",
-      "name": "Andrzej Duda",
-      "position": "Striker",
-      "teamId": "2"
-    },
-    {
-      "id": "844a",
-      "name": "Karol Nawrocki",
-      "position": "Striker",
-      "teamId": "3a74"
-    },
-    {
       "id": "9bef",
       "name": "Konstantynopolitańczykiewiczówianeczka",
       "position": "Chuh",
-      "teamId": "6b70"
-    },
-    {
-      "id": "4a7e",
-      "name": "Zawodniktestowy1 Zawodniktestowy1",
-      "position": "Pozycjatestowa124385135",
       "teamId": "6b70"
     }
   ]

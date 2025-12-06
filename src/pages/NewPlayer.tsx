@@ -3,6 +3,8 @@ import { useNavigate, useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
+import PageContainer from '../components/PageContainer';
+
 
 function NewPlayer() {
     const { id } = useParams(); // team ID from URL
@@ -33,11 +35,11 @@ function NewPlayer() {
     };
 
     return (
-        <div>
+        <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }}>
             <Menu teamName="Add New Player" />
-            <div style={{ marginTop: '100px', textAlign: 'center' }}>
-                <h2>Add Player to Team #{id}</h2>
-                <form onSubmit={handleSubmit} style={{ display: 'inline-block', textAlign: 'left' }}>
+            <PageContainer>
+                <h2>Add new player to team</h2>
+                <form onSubmit={handleSubmit} style={{ display: 'inline-block', textAlign: 'center' }}>
                     <div style={{ marginBottom: '1rem' }}>
                         <label htmlFor="name">Player Name:</label><br />
                         <input
@@ -69,21 +71,22 @@ function NewPlayer() {
                             padding: '0.5rem 1rem',
                             border: 'none',
                             borderRadius: '5px',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
                         }}
                     >
                         {loading ? 'Saving...' : 'Add Player'}
                     </button>
                     {error && <p style={{ color: 'red' }}>{error}</p>}
                 </form>
-                <div style={{ marginTop: '1rem' }}>
-                    <Link to={`/team/${id}`} style={{ color: '#007bff', textDecoration: 'none' }}>
-                        ← Back to Team
-                    </Link>
-                </div>
-            </div>
+                <br /><br />
+                <Link to={`/team/${id}`} style={{ color: '#007bff', textDecoration: 'none', marginTop: '2rem', display: 'inline-block' }}>
+                    ← Back to Team
+                </Link>
+
+
+            </PageContainer>
             <Footer />
-        </div>
+        </div >
     );
 }
 
