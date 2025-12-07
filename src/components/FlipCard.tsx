@@ -1,4 +1,3 @@
-// FlipCard.tsx
 import React from "react";
 import './flipcard.css';
 

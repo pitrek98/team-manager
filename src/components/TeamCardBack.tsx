@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './TeamCardBack.css';
 
 interface TeamCardBackProps {
     id: number;
@@ -15,21 +16,10 @@ export default function TeamCardBack({ id, name, playerCount }: TeamCardBackProp
                 color: 'black',
             }}
         >
-            <div
-                style={{
-                    width: '200px',
-                    // padding: '8px',
-                    textAlign: 'center',
-
-                    overflow: "hidden",
-                    textOverflow: "clip",
-                    whiteSpace: "nowrap",
-                    display: 'inline-block',
-                }}
-            >
-                <h3 style={{ margin: 0 }}>{name}</h3>
-                <p style={{ margin: '8px 0 0 0' }}>{playerCount} Players</p>
-                <p style={{ color: '#666', marginTop: '8px' }}>View Team →</p>
+            <div className="team-card-back-link">
+                <h3 className="team-card-back-name" >{name}</h3>
+                <p className="team-card-back-count">{playerCount} Players</p>
+                <p className="team-card-back-href">View Team →</p>
             </div>
         </Link>
     );

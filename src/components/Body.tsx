@@ -4,6 +4,7 @@ import Info from './Info';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
+import './Body.css';
 
 interface PlayerData {
     id: number;
@@ -33,34 +34,16 @@ function Body({ players: initialPlayers, teamId }: BodyProps) {
 
     return (
 
-        <main className="body" style={{ justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+        <main className="body">
             {players.length < 11 ? <Warning /> : <Info />}
-            <div
-                style={{
-                    display: 'grid',
-                    gridAutoFlow: 'row',
-                    gridTemplateColumns: 'repeat(auto-fit, 200px)',
-                    gap: '30px',
-                    justifyContent: 'center',
-                    width: '95%',
-                }}
-            >
+            <div className="body-grid">
                 {players.map(player => (
                     <Player key={player.id} name={player.name} position={player.position} id={player.id} onDelete={handleDeletePlayer} />
                 ))}
 
                 <Link
                     to={`/team/${teamId}/new-player`}
-                    style={{
-                        backgroundColor: '#28a745',
-                        color: 'white',
-                        border: '1px solid #ddd',
-                        borderRadius: '8px',
-                        padding: '0.5rem',
-                        margin: '0.5rem',
-                        alignContent: 'center',
-                        width: '170px',
-                    }}
+                    className="body-button"
                 >
                     + Add New Player
                 </Link>

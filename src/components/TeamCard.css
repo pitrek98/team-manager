@@ -1,0 +1,28 @@
+.team-card {
+    width: 220px;
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card-top {
+    display: flex;
+    height: 60%;
+}
+
+.team-card-bottom {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

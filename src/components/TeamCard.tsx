@@ -1,3 +1,5 @@
+import './TeamCard.css';
+
 interface TeamCardProps {
     id: number;
     name: string;
@@ -7,17 +9,8 @@ interface TeamCardProps {
 
 export default function TeamCard({ name, primaryColor, secondaryColor }: TeamCardProps) {
     return (
-        <div style={{
-            width: '220px',
-            height: '150px',
-            borderRadius: '12px',
-            overflow: 'hidden',
-            boxShadow: '0 4px 8px rgba(0,0,0,0.15)',
-            display: 'flex',
-            flexDirection: 'column',
-        }}>
-
-            <div style={{ display: "flex", height: "60%" }}>
+        <div className="team-card">
+            <div className="team-card-top">
                 <div
                     style={{
                         flex: 1,
@@ -32,23 +25,7 @@ export default function TeamCard({ name, primaryColor, secondaryColor }: TeamCar
                 />
             </div>
 
-            <div
-                style={{
-                    height: "40%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    background: "#ffffff",
-                    fontWeight: "bold",
-                    fontSize: "1.2rem",
-
-                    /* NEW */
-                    width: '220px',
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                }}
-            >
+            <div className="team-card-bottom">
                 {name}
             </div>
         </div>

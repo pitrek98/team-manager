@@ -1,0 +1,21 @@
+.team-card-back-link {
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.team-card-back-name {
+    margin: 0
+}
+
+.team-card-back-count {
+    margin: 8px 0 0 0
+}
+
+.team-card-back-href {
+    color: #666;
+    margin-top: 8px
+}

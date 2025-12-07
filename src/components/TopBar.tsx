@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './TopBar.css'
 
 interface Props {
     title: string;
@@ -8,19 +9,8 @@ interface Props {
 
 function TopBar({ title, buttonText, buttonLink }: Props) {
     return (
-        <div
-            style={{
-                width: '90%',
-                maxWidth: '2000px',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                margin: '0 auto',
-                marginTop: '1rem',
-                marginBottom: '1rem',
-            }}
-        >
-            <h2 style={{ margin: 0 }}>{title}</h2>
+        <div className='top-bar'        >
+            <h2 className="top-bar-title">{title}</h2>
 
             <Link
                 to={buttonLink}
