@@ -32,7 +32,7 @@ Your API will run on:
 
 ---
 
-## 🗄 Example REST API (db.json)
+## Example REST API (db.json)
 
 ```json
 {
