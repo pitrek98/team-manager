@@ -8,6 +8,7 @@ import TopBar from '../components/TopBar';
 import TeamCard from '../components/TeamCard';
 import FlipCard from '../components/FlipCard';
 import TeamCardBack from '../components/TeamCardBack';
+import './TeamList.css';
 
 interface Player {
     id: number;
@@ -48,30 +49,18 @@ function TeamList() {
         players.filter(p => p.teamId === teamId).length;
 
     return (
-        <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }
-        }>
+        <div className="team-list-container">
             <Menu teamName="Team manager" />
-
             <PageContainer>
                 <TopBar
                     title="All Teams"
                     buttonText="+ Create Team"
                     buttonLink="/new-team"
                 />
-
                 {loading ? (
                     <p>Loading teams...</p>
                 ) : (
-                    <div
-                        style={{
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                            gap: '20px',
-                            width: '95%',
-                            margin: '0 auto',
-                            justifyItems: 'center',
-                        }}
-                    >
+                    <div className="team-list-grid">
                         {teams.map(team => (
                             <FlipCard
                                 key={team.id}
@@ -83,7 +72,6 @@ function TeamList() {
                 )
                 }
             </PageContainer >
-
             <Footer />
         </div >
     );

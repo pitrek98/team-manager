@@ -1,0 +1,41 @@
+.new-player-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.new-player-form {
+    display: inline-block;
+    text-align: center;
+}
+
+.new-player-input-box {
+    margin-bottom: 1rem;
+}
+
+.new-player-input {
+    padding: 0.5rem;
+    width: 250px;
+}
+
+.new-player-button {
+    background-color: green;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-player-error {
+    color: red;
+    margin-top: 1rem;
+}
+
+.new-player-back-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: inline-block;
+}

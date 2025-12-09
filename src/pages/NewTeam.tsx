@@ -4,6 +4,7 @@ import axios from 'axios';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
+import './NewTeam.css';
 
 function NewTeam() {
     const [teamName, setTeamName] = useState('');
@@ -35,33 +36,19 @@ function NewTeam() {
     };
 
     return (
-        <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }
-        }>
+        <div className="new-team-container">
             <Menu teamName="Add New Team" />
 
             <PageContainer>
                 <h2>{teamName ? `${teamName}` : 'Create a New Team'}</h2>
-
-                {/* Team Card Color Preview */}
-                <div
-                    style={{
-                        width: '180px',
-                        height: '90px',
-                        margin: '20px auto',
-                        borderRadius: '10px',
-                        overflow: 'hidden',
-                        display: 'flex',
-                        boxShadow: '0 2px 6px rgba(0,0,0,0.2)'
-                    }}
-                >
+                <div className="new-team-color-box">
                     <div style={{ flex: 1, backgroundColor: color1 }}></div>
                     <div style={{ flex: 1, backgroundColor: color2 }}></div>
                 </div>
 
-                <form onSubmit={handleSubmit} style={{ display: 'inline-block', textAlign: 'center' }}>
+                <form onSubmit={handleSubmit} className="new-team-form">
 
-                    {/* Team Name */}
-                    <div style={{ marginBottom: '1rem' }}>
+                    <div className="new-team-input-box">
                         <label htmlFor="name">Team Name:</label><br />
                         <input
                             id="name"
@@ -69,53 +56,42 @@ function NewTeam() {
                             value={teamName}
                             onChange={(e) => setTeamName(e.target.value)}
                             required
-                            style={{ padding: '0.5rem', width: '250px' }}
+                            className="new-team-input-name"
                         />
                     </div>
 
-                    {/* Color 1 */}
-                    <div style={{ marginBottom: '1rem', display: 'inline-block', marginRight: '1rem' }}>
+                    <div className="new-team-input-box-left">
                         <label htmlFor="color1">Primary Color:</label><br />
                         <input
                             id="color1"
                             type="color"
                             value={color1}
                             onChange={(e) => setColor1(e.target.value)}
-                            style={{ width: '60px', height: '40px', cursor: 'pointer' }}
+                            className="new-team-input-color"
                         />
                     </div>
 
-                    {/* Color 2 */}
-                    <div style={{ marginBottom: '1rem', display: 'inline-block' }}>
+                    <div className="new-team-input-box-right">
                         <label htmlFor="color2">Secondary Color:</label><br />
                         <input
                             id="color2"
                             type="color"
                             value={color2}
                             onChange={(e) => setColor2(e.target.value)}
-                            style={{ width: '60px', height: '40px', cursor: 'pointer' }}
+                            className="new-team-input-color"
                         />
                     </div>
                     <br />
                     <button
                         type="submit"
                         disabled={loading}
-                        style={{
-                            backgroundColor: '#007bff',
-                            color: 'white',
-                            padding: '0.5rem 1rem',
-                            border: 'none',
-                            borderRadius: '5px',
-                            cursor: 'pointer',
-                            display: 'inline-block',
-                            marginRight: '1rem'
-                        }}
+                        className="new-team-button"
                     >
                         {loading ? 'Saving...' : 'Add Team'}
                     </button>
 
-                    {error && <p style={{ color: 'red' }}>{error}</p>}
-                    <Link to="/" style={{ textDecoration: 'none', color: '#007bff' }}>← Back to Teams</Link>
+                    {error && <p className="new-team-error">{error}</p>}
+                    <Link to="/" className="new-team-back-link">← Back to Teams</Link>
                 </form>
 
 

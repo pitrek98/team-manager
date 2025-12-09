@@ -4,10 +4,11 @@ import axios from 'axios';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
+import './NewPlayer.css';
 
 
 function NewPlayer() {
-    const { id } = useParams(); // team ID from URL
+    const { id } = useParams();
     const [name, setName] = useState('');
     const [position, setPosition] = useState('');
     const [loading, setLoading] = useState(false);
@@ -35,12 +36,12 @@ function NewPlayer() {
     };
 
     return (
-        <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', width: '100vw' }}>
+        <div className="new-player-container">
             <Menu teamName="Add New Player" />
             <PageContainer>
-                <h2>Add new player to team</h2>
-                <form onSubmit={handleSubmit} style={{ display: 'inline-block', textAlign: 'center' }}>
-                    <div style={{ marginBottom: '1rem' }}>
+                <h2>Input new player data</h2>
+                <form onSubmit={handleSubmit} className="new-player-form">
+                    <div className="new-player-input-box">
                         <label htmlFor="name">Player Name:</label><br />
                         <input
                             id="name"
@@ -48,10 +49,10 @@ function NewPlayer() {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             required
-                            style={{ padding: '0.5rem', width: '250px' }}
+                            className="new-player-input"
                         />
                     </div>
-                    <div style={{ marginBottom: '1rem' }}>
+                    <div className="new-player-input-box">
                         <label htmlFor="position">Position:</label><br />
                         <input
                             id="position"
@@ -59,27 +60,20 @@ function NewPlayer() {
                             value={position}
                             onChange={(e) => setPosition(e.target.value)}
                             required
-                            style={{ padding: '0.5rem', width: '250px' }}
+                            className="new-player-input"
                         />
                     </div>
                     <button
                         type="submit"
                         disabled={loading}
-                        style={{
-                            backgroundColor: '#007bff',
-                            color: 'white',
-                            padding: '0.5rem 1rem',
-                            border: 'none',
-                            borderRadius: '5px',
-                            cursor: 'pointer',
-                        }}
+                        className="new-player-button"
                     >
                         {loading ? 'Saving...' : 'Add Player'}
                     </button>
-                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    {error && <p className="new-player-error">{error}</p>}
                 </form>
                 <br /><br />
-                <Link to={`/team/${id}`} style={{ color: '#007bff', textDecoration: 'none', marginTop: '2rem', display: 'inline-block' }}>
+                <Link to={`/team/${id}`} className="new-player-back-link">
                     ← Back to Team
                 </Link>
 

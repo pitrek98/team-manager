@@ -1,0 +1,22 @@
+.team-details-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.team-details-back-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.team-details-delete {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: underline;
+}

@@ -5,6 +5,7 @@ import Menu from '../components/Menu';
 import Body from '../components/Body';
 import Footer from '../components/Footer';
 import PageContainer from '../components/PageContainer';
+import './TeamDetails.css';
 
 interface Player {
     id: number;
@@ -55,16 +56,13 @@ function TeamDetails() {
         if (!confirmDelete) return;
 
         try {
-            // 1. delete players belonging to this team
             const deletePlayerPromises = players.map(p =>
                 axios.delete(`http://localhost:3000/players/${p.id}`)
             );
             await Promise.all(deletePlayerPromises);
 
-            // 2. delete the team itself
             await axios.delete(`http://localhost:3000/teams/${id}`);
 
-            // 3. redirect back to list
             navigate('/');
         } catch (err) {
             console.error("Failed to delete team:", err);
@@ -75,14 +73,7 @@ function TeamDetails() {
     if (!team || !id) return <p>Team not found.</p>;
 
     return (
-        <div
-            style={{
-                minHeight: '80vh',
-                display: 'flex',
-                flexDirection: 'column',
-                width: '100vw'
-            }}
-        >
+        <div className="team-details-container">
             <Menu teamName={team.name} />
 
             <PageContainer>
@@ -90,22 +81,14 @@ function TeamDetails() {
 
                 <Link
                     to="/"
-                    style={{ textDecoration: 'none', color: '#007bff', marginTop: '20px' }}
+                    className='team-details-back-link'
                 >
                     ← Back to Teams
                 </Link>
                 <br />
                 <button
                     onClick={deleteTeam}
-                    style={{
-                        background: 'none',
-                        border: 'none',
-                        color: 'red',
-                        cursor: 'pointer',
-                        marginTop: '10px',
-                        fontSize: '1rem',
-                        textDecoration: 'underline'
-                    }}
+                    className="team-details-delete"
                 >
                     Delete Team
                 </button>

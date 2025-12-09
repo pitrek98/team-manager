@@ -1,0 +1,15 @@
+.team-list-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.team-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 95%;
+    margin: 0 auto;
+    justify-items: center;
+}
