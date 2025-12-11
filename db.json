@@ -253,6 +253,12 @@
       "name": "Federico Dimarco",
       "position": "Defender",
       "teamId": "a33a"
+    },
+    {
+      "id": "b1d8",
+      "name": "Karol Borys",
+      "position": "Forward",
+      "teamId": "4bcf"
     }
   ]
 }
