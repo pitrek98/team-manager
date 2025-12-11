@@ -7,12 +7,6 @@
       "secondaryColor": "#c60000"
     },
     {
-      "id": "0136",
-      "name": "Warta Poznań",
-      "primaryColor": "#ffffff",
-      "secondaryColor": "#00e138"
-    },
-    {
       "id": "9621",
       "name": "KKS Lech Poznań",
       "primaryColor": "#208fff",
@@ -23,6 +17,18 @@
       "name": "FC Barcelona",
       "primaryColor": "#0000a6",
       "secondaryColor": "#950000"
+    },
+    {
+      "id": "4bcf",
+      "name": "NK Maribor",
+      "primaryColor": "#6f0037",
+      "secondaryColor": "#ffff00"
+    },
+    {
+      "id": "a33a",
+      "name": "Inter Mediolan",
+      "primaryColor": "#0000a0",
+      "secondaryColor": "#ffffff"
     }
   ],
   "players": [
@@ -43,6 +49,210 @@
       "name": "Bogusław Rosołowski",
       "position": "Coach",
       "teamId": "4fa2"
+    },
+    {
+      "id": "7066",
+      "name": "Joan Garcia",
+      "position": "Goalkeeper",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "98ff",
+      "name": "Wojciech Szczęsny",
+      "position": "Goalkeeper",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "08d4",
+      "name": "Alejandro Balde",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "560a",
+      "name": "Ronald Araujo",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "34c9",
+      "name": "Pau Cubarsi",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "ba74",
+      "name": "Andreas Christensen",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "ba36",
+      "name": "Gerard Martin",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "7fe2",
+      "name": "Jules Kounde",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "d821",
+      "name": "Eric Garcia",
+      "position": "Defender",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "8003",
+      "name": "Gavi",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "2263",
+      "name": "Pedri",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "0544",
+      "name": "Fermin Lopez",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "6ce1",
+      "name": "Marc Casado`",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "6278",
+      "name": "Dani Olmo",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "d6f6",
+      "name": "Frenkie De Jong",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "a205",
+      "name": "Marc Bernal",
+      "position": "Midfielder",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "0966",
+      "name": "Ferran Torres",
+      "position": "Forward",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "4a32",
+      "name": "Robert Lewandowski",
+      "position": "Forward",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "a474",
+      "name": "Lamine Yamal",
+      "position": "Forward",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "013f",
+      "name": "Raphinha",
+      "position": "Forward",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "9298",
+      "name": "Marcus Rashford",
+      "position": "Forward",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "82aa",
+      "name": "Roony Bardghij",
+      "position": "Forward",
+      "teamId": "a5a5"
+    },
+    {
+      "id": "5c5d",
+      "name": "Mikael Ishak",
+      "position": "Forward",
+      "teamId": "9621"
+    },
+    {
+      "id": "1c55",
+      "name": "Louis Palma",
+      "position": "Forward",
+      "teamId": "9621"
+    },
+    {
+      "id": "d757",
+      "name": "Ali Golizadeh",
+      "position": "Forward",
+      "teamId": "9621"
+    },
+    {
+      "id": "a490",
+      "name": "Bartosz Mrozek",
+      "position": "Goalkeeper",
+      "teamId": "9621"
+    },
+    {
+      "id": "9b4b",
+      "name": "Joel Pereira",
+      "position": "Defender",
+      "teamId": "9621"
+    },
+    {
+      "id": "1f14",
+      "name": "Wojciech Mońka",
+      "position": "Defender",
+      "teamId": "9621"
+    },
+    {
+      "id": "116e",
+      "name": "Yannick Agnero",
+      "position": "Forward",
+      "teamId": "9621"
+    },
+    {
+      "id": "94ed",
+      "name": "Bryan Fiabema",
+      "position": "Forward",
+      "teamId": "9621"
+    },
+    {
+      "id": "2f8a",
+      "name": "Antonio Milić",
+      "position": "Defender",
+      "teamId": "9621"
+    },
+    {
+      "id": "a807",
+      "name": "Yann Sommer",
+      "position": "Goalkeeper",
+      "teamId": "a33a"
+    },
+    {
+      "id": "d52b",
+      "name": "Alessandro Bastoni",
+      "position": "Defender",
+      "teamId": "a33a"
+    },
+    {
+      "id": "a014",
+      "name": "Federico Dimarco",
+      "position": "Defender",
+      "teamId": "a33a"
     }
   ]
 }

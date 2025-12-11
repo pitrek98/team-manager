@@ -23,4 +23,5 @@
     margin: 0.5rem;
     align-content: center;
     width: 170px;
+    min-height: 100px;
 }
